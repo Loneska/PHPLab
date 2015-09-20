@@ -47,7 +47,7 @@
             <!--main content start-->
             <section class="main-content-wrapper">
                 <section id="main-content">
-                    <a class="btn btn-info pull-right" href="https://github.com/Loneska/PHP1-TP1" target="_blank"><i class="fa fa-github"></i> Github</a>
+                    <a class="btn btn-info pull-right" href="https://github.com/Loneska/PHPLab" target="_blank"><i class="fa fa-github"></i> Github</a>
                     
                     <div class="row">
                        <div class="col-md-8 col-md-offset-2">
@@ -112,7 +112,9 @@
                                     $successMessage = 'prends la, mais dis aussi à ta mère que j\'ai fais les poussières.';
                             
                                     $retryMessage = 'Dégage. Je t\'ai assez écouté jacasser.';
-                            
+                                    
+                                    $yesOrNotMessage = 'En attendant sort les poubelles.';
+                                    
                                     function GetCustomResponse($index, $array){
                                         if(array_key_exists('responseOf', $array[$index])){
                                             return $array[$index]['responseOf'];
@@ -140,6 +142,17 @@
                                                 <a class="btn btn-info pull-right" href="getdaddycar.php">Recommencer</a>
                                              </div>
                                         <?php
+                                        }
+                                        else if($responsesRatio > 12){
+                                        ?>
+                                            <div class="alert alert-warning alert-dismissable">
+                                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                                <strong>Je vais y réfléchir.</strong> <?php echo $yesOrNotMessage; ?>
+                                            </div>
+                                            <div class="form-group top-margin">
+                                                <a class="btn btn-info pull-right" href="getdaddycar.php">Recommencer</a>
+                                             </div>
+                                        <?php 
                                         }else{
                             
                                             ?>
@@ -171,11 +184,11 @@
                                                                     ?>
                                                                     
                                                                     <div class="row">
-                                                                        <div class="col-md-2">
+                                                                        <div class="col-md-3">
                                                                             <input type="radio" class="icheck" id="questionsYes-<?php echo $i ?>" name="responses[<?php echo $i ?>]" value="<?php echo $questions[$i]['ratio'] ?>" required <?php if(isset($_GET['responses'][$i]) && $_GET['responses'][$i] != 0) { echo "checked"; } ?>  />
                                                                             <label for="questionsYes-<?php echo $i ?>">Oui tente ça</label>   
                                                                          </div>
-                                                                         <div class="col-md-2">
+                                                                         <div class="col-md-3">
                                                                              <input type="radio" class="icheck" id="questionsNo-<?php echo $i ?>" name="responses[<?php echo $i ?>]" value="0" required <?php if(isset($_GET['responses'][$i]) && $_GET['responses'][$i] == 0) { echo "checked"; } ?> />
                                                                              <label for="questionsNo-<?php echo $i ?>">Non évite</label>
                                                                          </div>

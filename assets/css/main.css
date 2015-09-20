@@ -2754,3 +2754,12 @@ h3.timeline-title {
 .top-margin-large{
   padding-bottom: 2em;
 }
+
+h1{
+  margin-bottom: 1em;
+}
+
+.panel-body h3{
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
