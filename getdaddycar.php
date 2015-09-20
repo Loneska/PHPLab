@@ -23,10 +23,10 @@
     <!-- Custom styles for this theme -->
     <link rel="stylesheet" href="assets/css/main.css">
     
-        <link rel="stylesheet" href="assets/plugins/icheck/css/_all.css">
+    <link rel="stylesheet" href="assets/plugins/icheck/css/_all.css">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Feature detection -->
      <script src="assets/js/modernizr-2.6.2.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,6 +34,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
     </head>
     <body class="off-canvas">
         <div id="container">
@@ -62,8 +63,8 @@
                                 <h2 class="panel-title">Tenter votre chance</h2>
                             </div>
                             <div class="panel-body">
-                                <h3>Salut à toi visiteur, ta mission, si tu l'acceptes, est de réussir à découvrir la bonne combinaison d'arguments ci-dessous qui me permettra d'obtenir l'approbation de ton père pour emprunter sa voiture. 
-                                Ce n'est pas une homme facile à convaincre et en plus il est de mauvaise humeur, alors bonne chance.</h3>
+                                <h3>Salut à toi visiteur, ta mission, si tu l'acceptes, est de réussir à découvrir la bonne combinaison d'arguments ci-dessous qui me permettra d'obtenir l'approbation de mon père pour emprunter sa voiture. 
+                                Ce n'est pas un homme facile à convaincre et en plus il est de mauvaise humeur, alors bonne chance.</h3>
                             
                                 <?php
                             
