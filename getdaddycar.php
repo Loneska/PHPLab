@@ -109,17 +109,16 @@
                                         ]
                                     ];	
                             
-                                    $successMessage = 'prends la, mais dis aussi à ta mère que j\'ai fais les poussières.';
+                                    define('successMessage', 'prends la, mais dis aussi à ta mère que j\'ai fais les poussières.');
                             
-                                    $retryMessage = 'Dégage. Je t\'ai assez écouté jacasser.';
+                                    define('retryMessage', 'Dégage. Je t\'ai assez écouté jacasser.');
                                     
-                                    $yesOrNotMessage = 'En attendant sort les poubelles.';
+                                    define('yesOrNotMessage', 'En attendant sort les poubelles.');
                                     
                                     function GetCustomResponse($index, $array){
                                         if(array_key_exists('responseOf', $array[$index])){
                                             return $array[$index]['responseOf'];
                                         }	
-                                        
                                         return false;
                                     }
                             
@@ -132,7 +131,7 @@
                                         ?>
                                         <div class="alert alert-success alert-dismissable">
                                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                            <strong>Oui allez,</strong> <?php echo $successMessage; ?>
+                                            <strong>Oui allez,</strong> <?php echo successMessage; ?>
                                          </div>
                                         <?php
                                         
@@ -147,7 +146,7 @@
                                         ?>
                                             <div class="alert alert-warning alert-dismissable">
                                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                                <strong>Je vais y réfléchir.</strong> <?php echo $yesOrNotMessage; ?>
+                                                <strong>Je vais y réfléchir.</strong> <?php echo yesOrNotMessage; ?>
                                             </div>
                                             <div class="form-group top-margin">
                                                 <a class="btn btn-info pull-right" href="getdaddycar.php">Recommencer</a>
@@ -161,7 +160,7 @@
                                                         ?>
                                                         <div class="alert alert-danger alert-dismissable">
                                                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                                            <strong>Non.</strong> <?php echo $retryMessage; ?>
+                                                            <strong>Non.</strong> <?php echo retryMessage; ?>
                                                         </div>
                                                         <?php
                                                     }	

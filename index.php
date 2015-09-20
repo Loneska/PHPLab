@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
                             <a href="getdaddycar.php">
                                 <div class="dashboard-tile detail tile-purple">
                                     <div class="content">
